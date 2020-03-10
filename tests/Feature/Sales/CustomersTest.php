@@ -114,7 +114,7 @@ class CustomersTest extends FeatureTestCase
 		$password = $this->faker->password;
 
 		return $this->getRequest() + [
-			'create_user' => 'true',
+			'create_user' => 1,
 			'locale' => 'en-GB',
 			'password' => $password,
 			'password_confirmation' => $password,

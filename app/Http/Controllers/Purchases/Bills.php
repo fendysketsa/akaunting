@@ -108,9 +108,7 @@ class Bills extends Controller
 
         $categories = Category::type('expense')->enabled()->orderBy('name')->pluck('name', 'id');
 
-        $number = $this->getNextBillNumber();
-
-        return view('purchases.bills.create', compact('vendors', 'currencies', 'currency', 'items', 'taxes', 'categories', 'number'));
+        return view('purchases.bills.create', compact('vendors', 'currencies', 'currency', 'items', 'taxes', 'categories'));
     }
 
     /**
@@ -371,7 +369,7 @@ class Bills extends Controller
             if ($bill->currency_code != $item->currency_code) {
                 $item->default_currency_code = $bill->currency_code;
 
-                $amount = $item->getAmountConvertedFromDefault();
+                $amount = $item->getAmountConvertedFromCustomDefault();
             }
 
             $paid += $amount;

@@ -30,11 +30,7 @@
             'text' => trans('general.add_new'),
             'path' => isset($attributes['path']) ? $attributes['path']: false,
             'type' => isset($attributes['type']) ? $attributes['type'] : 'modal',
-            'field' => [
-                'key' => isset($attributes['field']['key']) ? $attributes['field']['key'] : 'id',
-                'value' => isset($attributes['field']['value']) ? $attributes['field']['value'] : 'name'
-            ],
-            'new_text' => trans('modules.new'),
+            'field' => isset($attributes['field']) ? $attributes['field'] : 'name',
             'buttons' => [
                 'cancel' => [
                     'text' => trans('general.cancel'),

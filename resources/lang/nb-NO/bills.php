@@ -36,12 +36,10 @@ return [
     'make_payment'          => 'Opprett betaling',
 
     'statuses' => [
-        'draft'             => 'Kladd',
+        'draft'             => 'Utkast',
         'received'          => 'Mottatt',
         'partial'           => 'Delvis',
         'paid'              => 'Betalt',
-        'overdue'           => 'Forfalt',
-        'unpaid'            => 'Ubetalt',
     ],
 
     'messages' => [

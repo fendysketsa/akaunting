@@ -30,7 +30,6 @@
                     'path' => route('modals.items.store'),
                     'type' => 'inline',
                     'field' => 'name',
-                    'new_text' => trans('modules.new'),
                 ])}}"
                 @interface="row.item_id = $event"
                 @label="row.name = $event"

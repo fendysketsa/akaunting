@@ -25,7 +25,6 @@ class Event extends Provider
         ],
         'App\Events\Purchase\BillCreated' => [
             'App\Listeners\Purchase\CreateBillCreatedHistory',
-            'App\Listeners\Purchase\IncreaseNextBillNumber',
         ],
         'App\Events\Purchase\BillReceived' => [
             'App\Listeners\Purchase\MarkBillReceived',

@@ -100,7 +100,7 @@ class Invoices extends Controller
             if ($invoice->currency_code != $item->currency_code) {
                 $item->default_currency_code = $invoice->currency_code;
 
-                $amount = $item->getAmountConvertedFromDefault();
+                $amount = $item->getAmountConvertedFromCustomDefault();
             }
 
             $paid += $amount;
@@ -129,7 +129,7 @@ class Invoices extends Controller
             if ($invoice->currency_code != $item->currency_code) {
                 $item->default_currency_code = $invoice->currency_code;
 
-                $amount = $item->getAmountConvertedFromDefault();
+                $amount = $item->getAmountConvertedFromCustomDefault();
             }
 
             $paid += $amount;

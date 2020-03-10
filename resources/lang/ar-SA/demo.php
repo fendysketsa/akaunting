@@ -3,7 +3,7 @@
 return [
 
     'accounts' => [
-        'cash'              => 'النقدية',
+        'cash'              => 'المال',
     ],
 
     'categories' => [
@@ -19,7 +19,7 @@ return [
     ],
 
     'offline_payments' => [
-        'cash'              => 'نقدا',
+        'cash'              => 'المال',
         'bank'              => 'تحويل بنكي',
     ],
 

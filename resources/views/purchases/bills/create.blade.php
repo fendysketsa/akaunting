@@ -19,13 +19,13 @@
                 <div class="row">
                     {{ Form::selectAddNewGroup('contact_id', trans_choice('general.vendors', 1), 'user', $vendors, config('general.vendors'), ['required' => 'required', 'path' => route('modals.vendors.create'), 'change' => 'onChangeContact']) }}
 
-                    {{ Form::selectAddNewGroup('currency_code', trans_choice('general.currencies', 1), 'exchange-alt', $currencies, setting('default.currency'), ['required' => 'required', 'path' => route('modals.currencies.create'), 'field' => ['key' => 'code', 'value' => 'name'], 'change' => 'onChangeCurrency']) }}
+                    {{ Form::selectAddNewGroup('currency_code', trans_choice('general.currencies', 1), 'exchange-alt', $currencies, setting('default.currency'), ['required' => 'required', 'path' => route('modals.currencies.create'), 'change' => 'onChangeCurrency']) }}
 
                     {{ Form::dateGroup('billed_at', trans('bills.bill_date'), 'calendar', ['id' => 'billed_at', 'class' => 'form-control datepicker', 'required' => 'required', 'date-format' => 'Y-m-d', 'autocomplete' => 'off'], request()->get('billed_at', Date::now()->toDateString())) }}
 
                     {{ Form::dateGroup('due_at', trans('bills.due_date'), 'calendar', ['id' => 'due_at', 'class' => 'form-control datepicker', 'required' => 'required', 'date-format' => 'Y-m-d', 'autocomplete' => 'off'], request()->get('due_at', request()->get('billed_at', Date::now()->toDateString()))) }}
 
-                    {{ Form::textGroup('bill_number', trans('bills.bill_number'), 'file', ['required' => 'required'], $number) }}
+                    {{ Form::textGroup('bill_number', trans('bills.bill_number'), 'file') }}
 
                     {{ Form::textGroup('order_number', trans('bills.order_number'), 'shopping-cart',[]) }}
 

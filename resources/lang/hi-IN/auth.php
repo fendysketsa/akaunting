@@ -13,7 +13,6 @@ return [
     'current_email'         => 'वर्तमान ईमेल',
     'reset'                 => 'रीसेट',
     'never'                 => 'कभी नहीँ',
-    'landing_page'          => 'लैंडिंग पेज',
 
     'password' => [
         'current'           => 'पासवर्ड',

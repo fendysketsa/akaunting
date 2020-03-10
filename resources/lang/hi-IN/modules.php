@@ -12,9 +12,10 @@ return [
     'search'                => 'खोज',
     'install'               => 'इंस्टॉल करें',
     'buy_now'               => 'अभी खरीदें',
-    'get_api_key'           => 'अपनी एपीआई कुंजी प्राप्त करने के लिए यहां <a href=":url" target="_blank">क्लिक</a> करें।',
+    'api_key_link'          => 'अपनी API कुंजी प्राप्त करने के लिए <a class="text-red" href="https://akaunting.com/profile" target="_blank"> यहां क्लिक करें </a>।',
     'no_apps'               => 'इस श्रेणी में अभी तक कोई एप्लिकेशन नहीं हैं।',
-    'become_developer'      => 'क्या आप एक डेवलपर हैं? <a href=":url" target="_blank">यहां</a> आप सीख सकते हैं कि ऐप कैसे बनाएं और आज बेचना शुरू करें!',
+    'developer'             => 'क्या आप एक डेवलपर हैं? <a href="https://akaunting.com/developers" target="_blank">यहां</a> आप सीख सकते हैं कि ऐप कैसे बनाएं और आज से बिक्री शुरू करें!',
+
     'recommended_apps'      => 'अनुशंसित ऐप्स',
 
     'about'                 => 'के बारे में',
@@ -79,6 +80,5 @@ return [
         ],
 
         'na'                => 'कोई समीक्षा नहीं है।'
-    ],
-
+    ]
 ];

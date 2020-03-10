@@ -32,7 +32,7 @@ class Category extends Model
         return $this->transactions()->where('type', 'expense');
     }
 
-    public function income_transactions()
+    public function income_transacions()
     {
         return $this->transactions()->where('type', 'income');
     }

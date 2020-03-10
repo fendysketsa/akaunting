@@ -3,7 +3,7 @@
 return [
 
     'code'                  => 'كود',
-    'rate'                  => 'المعدل',
+    'rate'                  => 'القيمة',
     'default'               => 'العملة الافتراضية',
     'decimal_mark'          => 'علامة عشرية',
     'thousands_separator'   => 'فاصل الآلاف',
